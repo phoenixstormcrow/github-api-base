@@ -3,7 +3,7 @@
    functionality required for all github api calls
 */
 
-var baseUrl = "https://api.github.com/",
+var baseUrl = "https://api.github.com",
     apiVersion = 3,
     baseProto = {
   toString: function toString() {
