@@ -13,7 +13,7 @@ Node module providing basic functionality required for all github api calls.
 > base
 { base: 'https://api.github.com/',
   version: 3,
-  headers: 
+  headers:
    { Accept: 'application/vnd.github.v3+json',
      'User-Agent': 'node_v0.11.14_x64_linux' } }
 
@@ -23,7 +23,17 @@ true
 'https://api.github.com/users/phoenixstormcrow'
 ```
 
-The module exports an object with the fields shown above. `base.headers['User-Agent']` is writable, all other properties are not. `.toString` is provided as a convenience for composing api urls.
+The module exports an object with the fields shown above. `base.headers['User-Agent']` is writable, all other properties are not.
+
+The default User-Agent header is constructed from
+
+```
+`node_${process.version}_${process.arch}_${process.platform}
+```
+
+so your value may differ. (I think I saw this technique used somewhere while screwing around on the internet. Unsure to whom credit is due.)
+
+ `.toString` is provided as a convenience for composing api urls.
 
 
 ```
