@@ -28,7 +28,7 @@ The module exports an object with the fields shown above. `base.headers['User-Ag
 The default User-Agent header is constructed from
 
 ```
-`node_${process.version}_${process.arch}_${process.platform}
+`node_${process.version}_${process.arch}_${process.platform}`
 ```
 
 so your value may differ. (I think I saw this technique used somewhere while screwing around on the internet. Unsure to whom credit is due.)
