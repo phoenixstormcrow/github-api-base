@@ -10,12 +10,20 @@
     "postbuild": "npm run lint",
     "pretest": "npm run build"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/phoenixstormcrow/github-api-base"
+  },
   "keywords": [
     "github",
     "api"
   ],
   "author": "Phoenix Stormcrow <phoenixstormcrow@gmail.com>",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/phoenixstormcrow/github-api-base/issues"
+  },
+  "homepage": "https://github.com/phoenixstormcrow/github-api-base",
   "devDependencies": {
     "babel": "^4.4.6",
     "jshint": "^2.6.0",
