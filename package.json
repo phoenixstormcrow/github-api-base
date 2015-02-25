@@ -1,0 +1,24 @@
+{
+  "name": "github-api-base",
+  "version": "1.0.0",
+  "description": "Basic functionality required for all github api calls.",
+  "main": "index.js",
+  "scripts": {
+    "lint": "jshint index.js",
+    "build": "babel --blacklist useStrict src/index.es6 -o index.js",
+    "test": "tape test/*",
+    "postbuild": "npm run lint",
+    "pretest": "npm run build"
+  },
+  "keywords": [
+    "github",
+    "api"
+  ],
+  "author": "Phoenix Stormcrow <phoenixstormcrow@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel": "^4.4.6",
+    "jshint": "^2.6.0",
+    "tape": "^3.5.0"
+  }
+}
