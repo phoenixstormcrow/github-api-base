@@ -1,6 +1,6 @@
 {
   "name": "github-api-base",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Basic functionality required for all github api calls.",
   "main": "index.js",
   "scripts": {
