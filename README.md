@@ -11,7 +11,7 @@ Node module providing basic functionality required for all github api calls.
 > var base = require('github-api-base')
 
 > base
-{ base: 'https://api.github.com/',
+{ base: 'https://api.github.com',
   version: 3,
   headers:
    { Accept: 'application/vnd.github.v3+json',
@@ -19,7 +19,7 @@ Node module providing basic functionality required for all github api calls.
 
 > base.toString() === base.base
 true
-> base + "users/phoenixstormcrow"
+> base + "/users/phoenixstormcrow"
 'https://api.github.com/users/phoenixstormcrow'
 ```
 
@@ -41,7 +41,7 @@ so your value may differ. (I think I saw this technique used somewhere while scr
 > var request = require('request')
 > var user = 'phoenixstormcrow'
 > var opts = {
-... url: base + "users/" + user,
+... url: base + "/users/" + user,
 ... headers: base.headers
 ... }
 
